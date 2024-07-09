@@ -1,4 +1,8 @@
 Sitemap: http://localhost:5173.org/sitemap.xml
 
 User-agent: *
-Disallow: /
+Disallow: /*
+
+Allow: /$
+Allow: /files$
+Allow: /map$
