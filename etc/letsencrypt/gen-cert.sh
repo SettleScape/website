@@ -1,4 +1,4 @@
-#!/usr/bin/env bash
+#!/usr/bin/env sh
 exec certbot certonly \
     --domain='settlescape.org' \
     --domain='*.settlescape.org' \
