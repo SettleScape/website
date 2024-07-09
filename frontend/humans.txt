@@ -1,0 +1,9 @@
+/* SITE */
+	Language:  English
+	License:  LAGPL3+ (Lesser Affero General Public License version 3.0 or later)
+	GitHub:  https://GitHub.com/SettleScape/website
+
+/* TEAM */
+	Lead Developer:  Miles Bradley Huff
+ 	Email:  MilesBHuff@NoReply.GitHub.com
+	From:  United States of America
