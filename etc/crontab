@@ -1,0 +1,7 @@
+SHELL=/bin/bash
+PATH=/sbin:/bin:/usr/sbin:/usr/bin
+MAILTO=nginx
+## IMPORTANT!:  DO NOT RUN ANY FILE IN `/srv/nginx/website/` AS ROOT!  THESE FILES ARE PULLED AUTOMATICALLY FROM THE INTERNET!  HUGE SECURITY RISK!
+
+## Periodical
+0 */12 * * * root /usr/bin/certbot renew --quiet
