@@ -1,0 +1,22 @@
+## Temporary files
+**/tmp/
+**.tmp
+**.swp
+**.lock
+
+## Backups
+**/backup/
+**.bak
+**.old
+
+## IDEs
+**/.classpath
+**/.factorypath
+**/.project
+
+## System files
+**/.directory
+**/.DS_Store
+**/desktop.ini
+**/thumbs.db
+**.fuse_hidden*
