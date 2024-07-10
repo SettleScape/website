@@ -23,11 +23,10 @@ find "$SRC_DIR" -type f -print0 | while IFS= read -r -d $'\0' IN; do
 
     OUT_DIR="$(dirname "$OUT")"
     [[ ! -d "$OUT_DIR" ]] && mkdir -p "$OUT_DIR"
-    unset OUT_DIR
 
     function do-cat { cat "$IN" > "$OUT"; }
     case "${IN##*.}" in
-        'css') "$NODE_BIN/minify" "$IN" > "$OUT" & continue ;;
+        'css') "$NODE_BIN/minify" "$IN" > "$OUT_DIR/styles.css" & continue ;;
         'xml'|'xhtml'|'svg') "$NODE_BIN/minify-xml" "$IN" > "$OUT" & continue;;
         *) do-cat & continue ;;
     esac
