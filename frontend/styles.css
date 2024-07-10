@@ -27,12 +27,12 @@
 	--shadow-size: 0.5rem;
 }
 @keyframes title-color-loop {
-0% { color: var(--white); }
-20% { color: var(--green); }
-40% { color: var(--blue); }
-60% { color: var(--light-purple); }
-80% { color: var(--gold); }
-100% { color: var(--white); }
+	0% { color: var(--white); }
+	20% { color: var(--green); }
+	40% { color: var(--blue); }
+	60% { color: var(--light-purple); }
+	80% { color: var(--gold); }
+	100% { color: var(--white); }
 }
 * {
 	font-family: Ubuntu, sans-serif;
