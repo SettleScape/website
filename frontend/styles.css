@@ -129,6 +129,7 @@ header >h1, nav >a {
 	padding: var(--sm);
 }
 header >h1 >a {
+	will-change: color;
 	animation: title-color-loop 10s infinite;
 	text-shadow: 0 0 var(--shadow-size) var(--black);
 }
