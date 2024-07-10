@@ -30,6 +30,7 @@
     },
     "devDependencies": {
         "clean-css-cli": "^5",
-        "minify-xml": "^4"
+        "minify-xml": "^4",
+        "reset-css": "^5"
     }
 }
