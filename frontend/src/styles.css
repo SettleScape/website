@@ -146,6 +146,10 @@ nav >a:hover {
 	background-color: var(--black);
 	text-decoration: unset;
 }
+nav >a.selfsame-link:hover {
+	color: var(--black);
+	background-color: var(--gray);
+}
 
 /* CONTENT */
 section {
