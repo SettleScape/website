@@ -8,7 +8,7 @@ export \
     NODE_BIN="$PWD/node_modules/.bin"
 
 ## Wipe the old `$DIST_DIR`
-if [[ ! -d "$DIST_DIR" ]]; then
+if [[ -d "$DIST_DIR" ]]; then
     if [[ $(lsof "$DIST_DIR" 2>/dev/null) ]]; then
         echo "'$DIST_DIR' is in use; please end whatever process is using it."
         exit 1
