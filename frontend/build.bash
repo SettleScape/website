@@ -26,7 +26,7 @@ find "$SRC_DIR" -type f -print0 | while IFS= read -r -d $'\0' IN; do
 
     function do-cat { cat "$IN" > "$OUT"; }
     case "${IN##*.}" in
-        'css') "$NODE_BIN/minify" "$IN" >> "$DIST_DIR/styles.css" && echo "$IN >> $DIST_DIR/styles.css" && continue ;;
+        'css') "$NODE_BIN/cleancss" "$IN" >> "$DIST_DIR/styles.css" && echo "$IN >> $DIST_DIR/styles.css" && continue ;;
         'xml'|'xhtml'|'svg') "$NODE_BIN/minify-xml" "$IN" > "$OUT" & echo "$IN > $OUT" && continue;;
         *) do-cat & echo "$IN > $OUT" && continue ;;
     esac

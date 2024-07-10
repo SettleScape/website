@@ -29,7 +29,7 @@
         "build": "bash build.bash"
     },
     "devDependencies": {
-        "minify": "^11",
+        "clean-css-cli": "^5",
         "minify-xml": "^4"
     }
 }
