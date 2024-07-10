@@ -35,7 +35,7 @@ done < <(find "$SRC_DIR" -type f -print0)
 wait
 
 ## Concatenate and optimize CSS
-"$NODE_BIN/cleancss" -o "$DIST_DIR/styles.css" $(echo "${CSS_FILES[@]}" | xargs)
+"$NODE_BIN/cleancss" -o "$DIST_DIR/styles.css" $(echo "${CSS_FILES[@]}" | sort | xargs)
 
 ## Done
 exit 0
