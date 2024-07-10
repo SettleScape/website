@@ -21,3 +21,9 @@
 *.ico binary
 *.png binary
 *.svg text diff=xml
+
+## NPM
+## -----------------------------------------------------------------------------
+*.json text
+npm-shrinkwrap.json binary
+package-lock.json binary

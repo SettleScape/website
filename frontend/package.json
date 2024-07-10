@@ -1,0 +1,35 @@
+{
+    "name": "website",
+    "version": "0.0.0",
+    "license": "LAGPL-3.0-or-later",
+    "description": "A simple website for SettleScape, a Java Minecraft server.",
+    "keywords": [
+        "SettleScape",
+        "Minecraft",
+        "website"
+    ],
+    "author": {
+        "name": "Miles B Huff",
+        "email": "MilesBHuff@NoReply.GitHub.com"
+    },
+    "homepage": "https://github.com/SettleScape/website#readme",
+    "bugs": {
+        "url": "https://github.com/SettleScape/website/issues"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/SettleScape/website.git"
+    },
+    "private": true,
+    "directories": {
+        "bin": "./dist",
+        "lib": "./src"
+    },
+    "scripts": {
+        "build": "bash build.bash"
+    },
+    "devDependencies": {
+        "minify": "^11",
+        "minify-xml": "^4"
+    }
+}
