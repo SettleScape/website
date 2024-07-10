@@ -18,7 +18,8 @@ fi
 mkdir -p "$DIST_DIR"
 
 ## Do the thing
-find "$SRC_DIR" -type f -print0 | while IFS= read -r -d $'\0' IN; do
+declare -a CSS_FILES=()
+while IFS= read -r -d $'\0' IN; do
     OUT="${IN/#$SRC_DIR/$DIST_DIR}"
 
     OUT_DIR="$(dirname "$OUT")"
@@ -26,12 +27,15 @@ find "$SRC_DIR" -type f -print0 | while IFS= read -r -d $'\0' IN; do
 
     function do-cat { cat "$IN" > "$OUT"; }
     case "${IN##*.}" in
-        'css') "$NODE_BIN/cleancss" "$IN" >> "$DIST_DIR/styles.css" && echo "$IN >> $DIST_DIR/styles.css" && continue ;;
+        'css') CSS_FILES+=("$IN") && echo "$IN >> $DIST_DIR/styles.css" && continue ;;
         'xml'|'xhtml'|'svg') "$NODE_BIN/minify-xml" "$IN" > "$OUT" & echo "$IN > $OUT" && continue;;
         *) do-cat & echo "$IN > $OUT" && continue ;;
     esac
-done
+done < <(find "$SRC_DIR" -type f -print0)
 wait
+
+## Concatenate and optimize CSS
+"$NODE_BIN/cleancss" -o "$DIST_DIR/styles.css" $(echo "${CSS_FILES[@]}" | xargs)
 
 ## Done
 exit 0
