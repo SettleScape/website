@@ -1,8 +1,11 @@
 Sitemap: https://settlescape.org/sitemap.xml
 
 User-agent: *
-Disallow: /*
+Disallow: /
 
 Allow: /$
 Allow: /files$
 Allow: /map$
+
+Allow: /sitemap.xml$
+Allow: /favicon.svg$
