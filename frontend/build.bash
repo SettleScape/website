@@ -31,7 +31,7 @@ while IFS= read -r -d $'\0' IN; do
         'xml'|'xhtml'|'svg') "$NODE_BIN/minify-xml" "$IN" > "$OUT" & echo "$IN > $OUT" && continue;;
         *) do-cat & echo "$IN > $OUT" && continue ;;
     esac
-done < <(find "$SRC_DIR" -type f -print0)
+done < <(find "$SRC_DIR" -type f -o -type l -print0)
 wait
 
 ## Concatenate and optimize CSS
