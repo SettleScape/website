@@ -38,4 +38,5 @@ wait
 "$NODE_BIN/cleancss" -o "$DIST_DIR/styles.css" $(echo "${CSS_FILES[@]}" | sort | xargs)
 
 ## Done
+rmdir "$DIST_DIR/*" 2>/dev/null #TODO: Delete all empty directories recursively, starting at the deepest ones.
 exit 0
