@@ -163,7 +163,7 @@ section {
 	height: 100%;
 	overflow-y: scroll;
 }
-.subsection {
+article, .subsection {
 	display: flex;
 	flex-direction: column;
 	padding: 0 var(--sm) 0 var(--sm);
