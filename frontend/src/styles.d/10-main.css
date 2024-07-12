@@ -131,8 +131,9 @@ header >h1, nav >a {
 	padding: var(--sm);
 }
 header >h1 >a {
+	color: var(--white); /* in case any clients ignore animations */
 	will-change: color;
-	animation: title-color-loop 10s infinite;
+	animation: title-color-loop 7.5s infinite;
 	text-shadow: 0 0 var(--shadow-size) var(--black);
 }
 nav >a {
