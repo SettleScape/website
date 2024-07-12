@@ -61,13 +61,13 @@ TMPDIR=$(mktemp -d -t "svg2ico-XXXXXX") #TODO: Maybe set the prefix dynamically,
 ## Generate PNG files for all common favicon sizes
 TMPFMT='.png'
 for SIZE in 16 32 48 64 128 256; do
-    inkscape -w "$SIZE" -h "$SIZE" -o "$TMPDIR/$SIZE.$TMPFMT" "$IN" 2>/dev/null # --export-png-use-dithering=true --export-png-compression=0
+    inkscape -w "$SIZE" -h "$SIZE" -o "$TMPDIR/$SIZE.$TMPFMT" "$IN" >/dev/null 2>/dev/null # --export-png-use-dithering=true --export-png-compression=0
 done
 unset IN
 
 ## Combine the PNG files into a single ICO file
 ## (with flags to enable transparency and lossless compression)
-convert -compress RLE -depth 32 -background transparent "$TMPDIR/"*".$TMPFMT" "$OUT" 2>/dev/null #NOTE: `convert` is `magick` on newer versions of ImageMagick.
+convert -compress RLE -depth 32 -background transparent "$TMPDIR/"*".$TMPFMT" "$OUT" >/dev/null 2>/dev/null #NOTE: `convert` is `magick` on newer versions of ImageMagick.
 unset TMPDIR TMPFMT OUT
 
 ## Done
