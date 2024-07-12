@@ -1,0 +1,153 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="Content-Type" content="application/xhtml+xml"/>
+
+		<title>SettleScape Pr,vacy Policy</title>
+		<meta name="description" content="The Privacy Policy for SettleScape, a Java Minecraft server." />
+		<meta name="keywords" content="SettleScape,Minecraft,rules" />
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta name="theme-color" content="#555" />
+		<meta name="background-color" content="#fff" />
+
+		<base href="https://SettleScape.org" />
+
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<link rel="icon shortcut" type="image/x-icon" href="/favicon.ico" />
+
+		<link rel="stylesheet" type="text/css" href="/styles.css" />
+
+		<link rel="robots" type="text/plain" href="/robots.txt" />
+		<link rel="author" type="text/plain" href="/humans.txt" />
+	</head>
+
+	<body>
+		<header>
+			<h1><a href="/">SettleScape</a></h1>
+			<nav>
+				<a href="/">Home</a>
+				<a href="/rules">Rules</a>
+				<a href="/files">Downloadables</a>
+			</nav>
+		</header>
+
+		<section>
+			<article>
+				<h2>Privacy Policy</h2>
+				<p><i>As of 2024-07-12 EDT.</i></p>
+
+				<div>
+					<h3>Meta</h3>
+					<p>Users will be notified by the <code>#news</code> channel in the SettleScape Discord of any changes to this Privacy Policy.</p>
+					<p>Because players must have joined the SettleScape Discord in order to play, and because joining the SettleScape Discord requires you to read info about the server (which contains a link to this page), then by playing on the SettleScape Minecraft server, you have necessarily agreed to this Privacy Policy.  If you do not agree to this Privacy Policy, then you are not allowed to access our services.  If you previously agreed to our Privacy Policy but no longer do, then you may no longer access our services; and any data from before you rescinded your acceptance remains under our control.  You are not considered to have rescinded your acceptance of this Privacy Policy until you have notified an admin, at which point you will be banned from the Minecraft server.  All data we collect is always to be processed according to the most-recent version of this Privacy Policy.</p>
+					<p>If you need to contact us about this, please message an admin on our Discord.  We also have a public email, "Public AT SettleScape DOT org", but it is rarely monitored, and the wait time for your request may be very long.</p>
+					<p>We do not allow users living in countries where the GDPR is active to utilize our services.  We do not have the resources or means to achieve compliance with the GDPR.</p>
+					<p>Please notify us if you see any issues with this Privacy Policy – we want to try to do our best to meet our legal obligations!</p>
+					<p>Please reach out to us if any issues pertaining to this arise – we will try to work with you to resolve them.  We operate in good faith; please give us the same courtesy!</p>
+				</div>
+
+				<div>
+					<h3>What we collect</h3>
+					<div>
+						<h5>Website</h5>
+						<p>Our website collects the bare minimum amount of information necessary to function.  This includes things such as HTTP headers that your browser sends, your public IP address, the request date and time, and the URL you requested.</p>
+					</div>
+					<div>
+						<h5>Minecraft server</h5>
+						<p>All Minecraft servers collect Minecraft usernames, Minecraft user UUIDs, public IP addresses, any text you save to the server (such as nicknames), and any chat messages you send to the server.  Our server has plugins that utilize this information.  Some plugins record how your username or UUID (henceforth "your account") interact with the world.  CoreProtect, for example, records when your accounts places, breaks, or otherwise interacts with any block; while Jobs Reborn records which chunks your account has visited.  Other plugins, like Towny, allow you to choose to record text in certain capacities, such as with <code>/res set about</code>.  Other plugins, like EssentialsX allow you to send long-lasting messages directly to other players as "mail".</p>
+					</div>
+					<div>
+						<h5><code>git</code> repository</h5>
+						<p>We only collect what you push.</p>
+					</div>
+				</div>
+
+				<div>
+					<h3>How do we store it</h3>
+					<div>
+						<h5>General</h5>
+						<p>We store our data primarily on our production Linux server.  We also store backups of the data off-site on one of our administrators' homelabs.  Administrators may also store some server data on their local machines as is necessary for the maintenance and futher development of the server.  At every step along the way, we utilize industry-standard security measures, and then-some.  The production Linux server is protected by extremely strong passwords, is always kept up-to-date, and its configuration has been hardened.  The backup server is held to the same high standards of security.  Administrators must use whole-disk encryption and secure passwords on their personal computers in order to store user data there.</p>
+					</div>
+					<div>
+						<h5>Website</h5>
+						<p>The data is transmitted over HTTPS (and therefore encrypted en route) and then stored in access logs and error logs located on the server itself.</p>
+					</div>
+					<div>
+						<h5>Minecraft server</h5>
+						<p>All data is stored locally on our lone server, located in Texas.  All data is stored within the Minecraft server directory.  Some data is stored in the world files; other data is stored in the plugin directories.  We don't have almost any control over where within the server the data is stored; this is different for every plugin the server uses, and in many cases we have no way to independently access, modify, or remove said data.</p>
+					</div>
+					<div>
+						<h5><code>git</code> repository</h5>
+						<p>Changes to SettleScape's <code>git</code> repositories are syndicated to the server.  Additionally, anyone with an Internet connection can download any such changes from our GitHub repositories.  This includes server developers, who have SettleScape's <code>git</code> repos on their personal computers.</p>
+					</div>
+				</div>
+
+				<div>
+					<h3>How long do we keep it</h3>
+					<div>
+						<h5>Website</h5>
+						<p>All logs on the server are automatically deleted after 7 days (plus or minus just under one day).</p>
+					</div>
+					<div>
+						<h5>Minecraft server</h5>
+						<p>IP addresses and chat messages are automatically deleted after 7 days (plus or minus just under one day).  CoreProtect records older than 15 days are automatically purged (plus or minus just under one day).  Mail sent to other players lasts until those players open that mail.  Some other records may have their own lifespans; but in general, everything else is kept indefinitely.  Due to the nature of Minecraft and the plugins we use, we have no viable means of removing the majority of the data collected.</p>
+					</div>
+					<div>
+						<h5><code>git</code> repository</h5>
+						<p>Indefinitely.  Once you push something to the SettleScape GitHub repo, it becomes licensed under the repository license.  Our repositories only utilize open-source licenses, which permit perpetual public use of what you pushed.  Do not push code that you do not want to have be under such a license.</p>
+					</div>
+				</div>
+
+				<div>
+					<h3>How do we share it</h3>
+					<div>
+						<h5>General</h5>
+						<p>Data may be shared with staff as necessary and appropriate for the functioning of the service.</p>
+						<p>The server host, Kamatera, due to their nature as the server host, is likely theoretically able to access anything on the server.</p>
+						<p>We <em>never</em> sell your data.</p>
+					</div>
+					<div>
+						<h5>Website</h5>
+						<p>We do not share any of this data with anyone other than SettleScape staff unless forced to by the government.</p>
+					</div>
+					<div>
+						<h5>Minecraft server</h5>
+						<p>As you play on the server, your username, player skin, and real-time in-game location are displayed on the server map, which is publicly accessible.</p>
+						<p>Any chat messages you send to general chat are syndicated to the server's Discord, and potentially to Microsoft.  The in-game chat messages at the server's Discord are visible only to SettleScape staff, players of sufficient rank, and Discord itself.  Staff can see a full chat history stretching back to the beginning of that Discord channel.  Players can only see messages sent during the time that they have been actively looking at that channel; the channel appears to have been wiped every time they view it anew.  Because we send your general chat messages to Discord, Discord's privacy policy also applies to them.  Note that we require a Discord account in order to play on the server – so if you are playing on the server, then you have already accepted Discord's privacy policy.  If you would prefer that Discord not record your messages, you can send messages to other players using other chat channels.  Examples include direct messaging, mail, and town/nation/culture/party chats.  Once a message has been sent to Discord, it is no longer under our control, and no longer governed by our Privacy Policy; instead, it is governed according to <em>their</em> policies.</p>
+						<p>Server errors and warnings are also shared with Discord.  These may include IP addresses, usernames, UUIDs, and any other data we mentioned collecting.  Like with chat messages, once the data has been sent to Discord, it is outside of our control.  The reason they are sent there is so that server administrators can view such things in real-time without having to be physically logged-in to the server.</p>
+						<p>One of the promises of SettleScape is that, occasionally, full world downloads are made available to players so that they may have personal copies of their builds.  When this happens, any player data stored in the world files becomes accessible to any player who downloads the world.  We do not know the full scope of player data saved in the world files, only that it consists of things related to the worlds themselves.  Examples include signs, books, named/lored items, player inventories, things you have built, and other such things of that nature.  Some plugins also store data in the world files; this data is attached to your acount's username or UUID.  We do not know specfically what kinds of data which plugins are storing there.</p>
+						<p>There is no way for us to prevent other players from screencapturing.  Anything you say or do on the server might be recorded by a player who can see you.  Do not do things you aren't okay with seeing in a screenshot or on a video-sharing website.</p>
+					</div>
+					<div>
+						<h5><code>git</code> repository</h5>
+						<p>Anything you push to the <code>git</code> repo, it becomes licensed under the repository license.  Our repositories only utilize open-source licenses, which permit perpetual public use of what you pushed.  Do not push code that you do not want to have be under such a license.</p>
+					</div>
+				</div>
+
+				<div>
+					<h3>Can I access, modify, or delete stored data?</h3>
+					<div>
+						<h5>Website</h5>
+						<p>No; it is not technically feasible.  See the "how long do we keep it" section above for information on this data's lifespan.</p>
+					</div>
+					<div>
+						<h5>Minecraft server</h5>
+						<p>You can access, modify, and delete data as allowed by in-game commands.  Past that, you generally lack the ability to access, modify, or delete data, and we do too -- minecraft usernames and UUIDs are recorded in so many places on ther server that we could not possibly find and remove them all even if we wanted to -- we would barely even know where to begin.</p>
+					</div>
+					<div>
+						<h5><code>git</code> repository</h5>
+						<p>Once you have pushed changes, your only option is to push new changes that overwrite what you pushed earlier.</p>
+					</div>
+				</div>
+
+			</article>
+		</section>
+		<footer>
+			<span>Copyright © from 2024 by SettleScape per <a href="https://GitHub.com/SettleScape/server/blob/master/COPYRIGHT.TXT">LAGPL3</a>.</span>
+			<span>(<a href="https://github.com/SettleScape/server/tree/master/www">Source Code</a>)</span>
+			<span>(<a href="/privacy-policy">Privacy Policy</a>)</span>
+		</footer>
+	</body>
+</html>
