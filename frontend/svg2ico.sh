@@ -67,7 +67,7 @@ unset IN
 
 ## Combine the PNG files into a single ICO file
 ## (with flags to enable transparency and lossless compression)
-convert -compress RLE -depth 32 -background transparent "$TMPDIR/"*".$TMPFMT" "$OUT" #NOTE: `convert` is `magick` on newer versions of ImageMagick.
+convert -compress RLE -depth 32 -background transparent "$TMPDIR/"*".$TMPFMT" "$OUT" 2>/dev/null #NOTE: `convert` is `magick` on newer versions of ImageMagick.
 unset TMPDIR TMPFMT OUT
 
 ## Done
