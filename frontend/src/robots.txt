@@ -6,6 +6,7 @@ Disallow: /
 Allow: /$
 Allow: /files$
 Allow: /map$
+Allow: /rules$
 
 Allow: /sitemap.xml$
 Allow: /favicon.svg$
