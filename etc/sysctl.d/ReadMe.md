@@ -8,6 +8,8 @@ The following items differ from upstream:
 
 **`70-net-core.conf`:**
 
+* `kernel.domainname` is set to `settlescape.org`.
+
 * `net.core.bpf_jit_enable=0` is commented-out, because it doesn't exist on Oracle Linux.
 
 **`74-net-ipv4.conf`:**
