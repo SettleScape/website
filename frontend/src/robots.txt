@@ -9,4 +9,4 @@ Allow: /map$
 Allow: /rules$
 
 Allow: /sitemap.xml$
-Allow: /favicon.svg$
+Allow: /favicon.ico$
