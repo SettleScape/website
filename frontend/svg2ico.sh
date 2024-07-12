@@ -61,7 +61,7 @@ TMPDIR=$(mktemp -d -t "svg2ico-XXXXXX") #TODO: Maybe set the prefix dynamically,
 ## Generate PNG files for all common favicon sizes
 TMPFMT='.png'
 for SIZE in 16 32 48 64 128 256; do
-    inkscape -w "$SIZE" -h "$SIZE" -o "$TMPDIR/$SIZE.$TMPFMT" "$IN" --export-png-use-dithering=true #TODO: Disable compression, which is an unnecessary slowdown in this scenario.
+    inkscape -w "$SIZE" -h "$SIZE" -o "$TMPDIR/$SIZE.$TMPFMT" "$IN" # --export-png-use-dithering=true --export-png-compression=0
 done
 unset IN
 
